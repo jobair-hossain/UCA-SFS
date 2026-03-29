@@ -170,3 +170,15 @@ footer ul { list-style:none; padding:0; margin:0; display:grid; gap:0.45rem; }
   .hero, .hero-simple { padding-top: 2.6rem; }
   h1 { font-size: 2.25rem; }
 }
+
+
+.alert-warning {
+  background-color: #ffe6e6;
+  border-left: 5px solid #cc0000;
+  color: #8b0000;
+  padding: 16px 18px;
+  border-radius: 6px;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  margin: 20px 0;
+}
