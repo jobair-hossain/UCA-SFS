@@ -1,47 +1,54 @@
-# UCA Scholarship Website Template
+# ARISE CyberAI Scholarship for Service (SFS) Website  
+University of Central Arkansas (UCA)
 
-This is a GitHub Pages-ready static website for a scholarship program at the University of Central Arkansas.
+This repository hosts the official **student-facing website** for the  
+**ARISE CyberAI Scholarship for Service (SFS)** program at the University of Central Arkansas.
 
-## Files
-- `index.html` - Home page
-- `about.html` - About the scholarship
-- `requirements.html` - Eligibility and document requirements
-- `program.html` - Program benefits and structure
-- `applications.html` - Application materials and deadlines
-- `process.html` - Review and selection process
-- `faqs.html` - Frequently asked questions
-- `contact.html` - Contact and inquiry page
-- `styles.css` - Site styling
-- `script.js` - Mobile menu and FAQ behavior
+🔗 Live Site: https://jobair-hossain.github.io/UCA-SFS/
 
-## Deploy to GitHub Pages
+---
 
-### Option 1: Host in your existing repository `jobair-hossain.github.io`
-1. Open your local clone of the repository.
-2. Copy all files from this folder into the root of the repo.
-3. Commit and push:
-   ```bash
-   git add .
-   git commit -m "Add UCA scholarship website"
-   git push origin main
-   ```
-4. Your site will publish at your GitHub Pages domain.
+## 📌 About the Website
 
-### Option 2: Host as a project site in repository `scholarship`
-1. Create a new repository, for example `scholarship`.
-2. Upload all files to the repository root.
-3. In GitHub, open **Settings > Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select branch `main` and folder `/root`.
-6. Save. GitHub will publish the site at:
-   `https://jobair-hossain.github.io/scholarship/`
+This website is designed to provide students with clear, structured, and accessible information about:
 
-## Customize Quickly
-- Change the program title in the header and page titles.
-- Update deadline dates, eligibility rules, email, office location, and application links.
-- Replace placeholder scholarship language with your actual award description.
-- Add the official approved UCA logo after confirming usage and download access.
+- Program overview and goals
+- Eligibility requirements
+- Program structure and student experience
+- Application guidance and preparation
+- Selection process
+- Frequently asked questions
+- Contact and support information
 
-## Notes
-- The contact form is visual only. To make it send messages, connect it to Formspree, Netlify Forms, or another form backend.
-- The site is fully static, so it works well on GitHub Pages.
+The site follows a **student-centered design**, focusing on clarity, usability, and motivation for prospective applicants.
+
+---
+
+## ⚠️ Important Notice
+
+The ARISE CyberAI SFS program is **pending funding through NSF Program Solicitation NSF 26-503**.  
+Content on this site reflects the **proposed program** and may be updated upon award confirmation.
+
+---
+
+## 📁 Website Structure
+
+- `index.html` — Home page (student-focused overview and quick facts)
+- `about.html` — Program mission, goals, and distinguishing features
+- `requirements.html` — Eligibility criteria and expectations
+- `program.html` — Academic pathway, CyberAI focus, and student experience
+- `applications.html` — Application preparation and guidance
+- `process.html` — Review, selection, and onboarding process
+- `faqs.html` — Frequently asked student questions
+- `contact.html` — Program contact information
+- `styles.css` — Global styling (layout, colors, responsiveness)
+- `script.js` — Interactive components (navigation, FAQ behavior)
+
+---
+
+## 🚀 Deployment (GitHub Pages)
+
+This site is deployed using GitHub Pages.
+
+### Project Site (Current Setup)
+The website is hosted as a project site:
