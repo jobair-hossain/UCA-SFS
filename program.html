@@ -3,12 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Program experience for the ARISE CyberAI Scholarship for Service at the University of Central Arkansas." />
+  <meta
+    name="description"
+    content="Program experience for the ARISE CyberAI Scholarship for Service at the University of Central Arkansas."
+  />
   <title>Program | ARISE CyberAI SFS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .photo-card,
+    .info-panel,
+    .important-box,
+    .summary-strip {
+      background: var(--white);
+      border: 1px solid rgba(88,44,131,0.08);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .photo-card {
+      overflow: hidden;
+      min-height: 100%;
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      min-height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .summary-strip {
+      padding: 1rem 1.1rem;
+      margin-top: 1.2rem;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap: 1rem;
+    }
+
+    .summary-item {
+      background: rgba(88,44,131,0.08);
+      border: 1px solid rgba(88,44,131,0.12);
+      border-radius: 14px;
+      padding: 0.95rem 1rem;
+    }
+
+    .summary-item strong {
+      display: block;
+      color: var(--uca-purple-dark);
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .summary-item span {
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .split-feature {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      align-items: stretch;
+    }
+
+    .info-panel {
+      padding: 1.4rem;
+    }
+
+    .important-box {
+      padding: 1.2rem 1.3rem;
+      background: #fff8ea;
+      border-left: 5px solid var(--gold);
+    }
+
+    .important-box p {
+      margin: 0;
+      color: #5f4a12;
+    }
+
+    .clean-list {
+      margin: 0.6rem 0 0;
+      padding-left: 1.1rem;
+    }
+
+    .clean-list li {
+      margin: 0.45rem 0;
+    }
+
+    .mini-note {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 0.8rem;
+    }
+
+    @media (max-width: 980px) {
+      .summary-grid,
+      .split-feature {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body class="program-page">
   <div class="topbar">
@@ -48,30 +149,112 @@
       <div class="eyebrow">Program Experience</div>
       <h1>What students can expect from ARISE</h1>
       <p class="lead">
-        ARISE is designed to combine cybersecurity education, artificial intelligence, Quantum Machine Learning,
-        research, hands-on experiences, and career preparation into one student-centered pathway for public-service impact.
+        ARISE is designed to combine cybersecurity education, applied AI, research,
+        hands-on learning, mentoring, and structured career preparation into one student-centered pathway for public-service impact.
       </p>
+
+      <div class="summary-strip">
+        <div class="summary-grid">
+          <div class="summary-item">
+            <strong>Up to 3 Years</strong>
+            <span>Scholarship support may be provided for up to three years, depending on pathway and entry point.</span>
+          </div>
+          <div class="summary-item">
+            <strong>Annual Stipend</strong>
+            <span>The students will receive support which includes an annual stipend along with other academic and professional support.</span>
+          </div>
+          <div class="summary-item">
+            <strong>BS and MS Pathways</strong>
+            <span>Eligible undergraduate, accelerated BS-MS, and master’s students may participate.</span>
+          </div>
+          <div class="summary-item">
+            <strong>Internship + Service</strong>
+            <span>The pathway includes internship preparation and government service expectations after graduation.</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section>
     <div class="container">
       <div class="alert-warning">
-        <strong>Notice:</strong> The ARISE CyberAI SFS program is pending funding through NSF Program Solicitation NSF 26-503. Content on this site reflects the proposed program as described in the submitted proposal. Final program activities and expectations will be confirmed if the program is funded.
+        <strong>Notice:</strong> The ARISE CyberAI SFS program is pending funding through NSF Program Solicitation NSF 26-503.
+        Content on this site reflects the proposed program as described in the submitted proposal.
+        Final program activities, scholar support, and expectations will be confirmed if the program is funded.
       </div>
     </div>
   </section>
 
   <main>
     <section>
-      <div class="container">
-        <h2 class="section-title">How the program is designed</h2>
-        <p class="section-intro">
-          ARISE is intended to help students move from strong computing foundations to more advanced preparation
-          in cybersecurity, CyberAI, and emerging technologies. The program emphasizes layered learning,
-          research engagement, practical experiences, and long-term career readiness.
-        </p>
+      <div class="container split-feature">
+        <article class="info-panel">
+          <h2 class="section-title">How the program is designed</h2>
+          <p>
+            ARISE is intended to help students move from strong computing foundations to more advanced preparation
+            in cybersecurity, applied AI, and public-service workforce readiness. The program emphasizes layered learning,
+            research engagement, practical experiences, structured mentoring, and transition into qualifying government careers.
+          </p>
+          <p>
+            The pathway is designed for eligible students who want more than coursework alone. It combines academic growth,
+            technical preparation, professional development, and service-oriented career planning into one coordinated experience.
+          </p>
+          <p class="mini-note">
+            ARISE is not limited to undergraduate students. Eligible accelerated BS-MS and master’s students are also part of the proposed pathway.
+          </p>
+        </article>
 
+        <div class="photo-card">
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+            alt="Students collaborating in an academic environment"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Scholar support</h2>
+        <div class="grid-2">
+          <article class="card">
+            <h3>Financial support</h3>
+            <p>
+              ARISE is designed to provide comprehensive financial support consistent with program guidelines.
+              Proposed support includes full tuition and fees, an annual stipend, and allowances for books and supplies.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Professional support</h3>
+            <p>
+              The program also supports professional travel, including participation in the SFS Job Fair,
+              and preparation for cybersecurity certifications that strengthen career readiness.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Support duration</h3>
+            <p>
+              Scholarships may be provided for up to three years, depending on academic level at entry.
+              The program is expected to include a mix of two- and three-year support durations aligned with undergraduate and accelerated BS-MS pathways.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Student success support</h3>
+            <p>
+              In addition to faculty mentoring and cohort-based support, students may benefit from academic advising,
+              tutoring, counseling, and other university support services that help identify challenges early and support persistence.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
         <div class="table-wrap">
           <table>
             <thead>
@@ -85,35 +268,34 @@
                 <td>Foundational preparation</td>
                 <td>
                   Students build strong preparation through computing, networking, cybersecurity, secure systems,
-                  operating systems, data structures, cryptography, data analysis, and machine learning fundamentals.
+                  operating systems, software development, data analysis, and related technical foundations.
                 </td>
               </tr>
               <tr>
-                <td>CyberAI integration</td>
+                <td>Cybersecurity and AI integration</td>
                 <td>
-                  Students engage with CyberAI-focused learning through coursework, labs, and applied activities
-                  that connect artificial intelligence with real cybersecurity problems.
+                  Students engage with learning experiences that connect artificial intelligence with real cybersecurity problems,
+                  including threat analysis, anomaly detection, malware-related analytics, security monitoring, and cyber defense.
                 </td>
               </tr>
               <tr>
                 <td>Research and applied learning</td>
                 <td>
-                  Students may participate in faculty-mentored research, hands-on projects, cyber exercises,
-                  and experimentation that strengthen both technical and analytical skills.
+                  Students may participate in faculty-mentored research, projects, cyber exercises,
+                  and other applied experiences that strengthen both technical and analytical skills.
                 </td>
               </tr>
               <tr>
-                <td>Advanced topics</td>
+                <td>Internship and workforce preparation</td>
                 <td>
-                  Students may explore advanced areas such as cyber defense analytics, trustworthy AI,
-                  malware analysis, threat intelligence, secure software systems, and Quantum Machine Learning for cybersecurity.
+                  Students prepare for internships, mentoring activities, professional development,
+                  and workforce transition through guided career preparation.
                 </td>
               </tr>
               <tr>
-                <td>Career preparation</td>
+                <td>Government career transition</td>
                 <td>
-                  Students build readiness for internships, professional development, the SFS job fair,
-                  and transition into qualifying government cybersecurity careers after graduation.
+                  Students build readiness for the SFS Job Fair and transition into qualifying government cybersecurity careers after graduation.
                 </td>
               </tr>
             </tbody>
@@ -127,18 +309,18 @@
         <h2 class="section-title">Key parts of the student experience</h2>
         <div class="grid-3">
           <article class="card">
-            <h3>CyberAI-enhanced learning</h3>
+            <h3>Cybersecurity-focused learning</h3>
             <p>
-              Students explore how AI and machine learning support cybersecurity tasks such as anomaly detection,
-              malware analysis, vulnerability assessment, security monitoring, and cyber defense analytics.
+              Students explore how AI and data-driven methods support cybersecurity tasks such as anomaly detection,
+              vulnerability analysis, malware-related analytics, security monitoring, and cyber defense.
             </p>
           </article>
 
           <article class="card">
             <h3>Research and innovation</h3>
             <p>
-              Students engage in faculty-mentored research that may include cybersecurity analytics, applied AI,
-              secure systems, and emerging topics such as Quantum Machine Learning in cyber defense.
+              Students may engage in faculty-mentored research in cybersecurity analytics, applied AI,
+              secure systems, software, and other emerging topics relevant to cyber defense and public-service needs.
             </p>
           </article>
 
@@ -146,10 +328,34 @@
             <h3>Professional development</h3>
             <p>
               ARISE is designed to support growth through mentoring, seminars, technical activities,
-              career guidance, competition preparation, and broader professional readiness.
+              certification preparation, job fair readiness, and broader professional development.
             </p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split-feature">
+        <div class="photo-card">
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+            alt="Students working together with laptops in a university setting"
+          />
+        </div>
+
+        <article class="info-panel">
+          <h2 class="section-title">Placement and career preparation</h2>
+          <p>
+            ARISE provides structured placement support through participation in the CyberAI SFS Job Fair,
+            faculty mentoring on federal hiring processes, résumé and interview preparation,
+            and targeted internship pathways that support transition into government employment.
+          </p>
+          <p>
+            Scholars will also receive guidance related to security clearance processes and federal hiring documentation,
+            including awareness of materials such as SF-86 and other expectations that may apply to government positions.
+          </p>
+        </article>
       </div>
     </section>
 
@@ -157,18 +363,18 @@
       <div class="container">
         <div class="grid-2">
           <article class="card">
-            <h3>Hands-on learning</h3>
-            <p>
-              Students can expect practical experiences through labs, projects, research activities,
-              applied cybersecurity exercises, and other opportunities that connect theory with real-world challenges.
-            </p>
-          </article>
-
-          <article class="card">
             <h3>Cohort and mentoring model</h3>
             <p>
               The program is designed to support students through faculty mentoring, peer learning,
               shared development activities, and a strong sense of scholarly and professional community.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>What students may gain</h3>
+            <p>
+              Students may gain stronger technical depth, applied experience, research confidence,
+              internship readiness, and a clearer pathway toward qualifying government-focused cybersecurity careers.
             </p>
           </article>
         </div>
@@ -177,30 +383,13 @@
 
     <section>
       <div class="container">
-        <h2 class="section-title">What students may gain</h2>
-        <div class="grid-3">
-          <article class="card">
-            <h3>Technical depth</h3>
-            <p>
-              Stronger preparation in cybersecurity, artificial intelligence, secure systems, data-driven analysis,
-              and emerging areas such as Quantum Machine Learning.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Research experience</h3>
-            <p>
-              Opportunities to work with faculty on research-driven and project-based experiences that strengthen
-              graduate-school readiness, technical confidence, and career development.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Career direction</h3>
-            <p>
-              A clearer pathway toward internships, public-service commitments, and government-focused cybersecurity careers.
-            </p>
-          </article>
+        <div class="important-box">
+          <p>
+            <strong>Important consideration:</strong> ARISE is a scholarship-for-service pathway, not simply a general scholarship.
+            Scholars are required to complete one year of full-time employment in a qualifying government cybersecurity position
+            for each year of scholarship support received. If the required service is not completed,
+            the scholarship may become a repayment obligation similar to a student loan.
+          </p>
         </div>
       </div>
     </section>
@@ -209,11 +398,13 @@
       <div class="container">
         <h2>Want to see whether ARISE matches your goals?</h2>
         <p>
-          Review the eligibility requirements, explore the application process, and contact the program if you have questions about fit, preparation, or academic pathways.
+          Review the eligibility requirements, explore the application process, and contact the program if you have questions about fit,
+          preparation, academic pathways, or service obligations.
         </p>
         <div class="button-row">
           <a class="btn btn-light" href="requirements.html">View Requirements</a>
           <a class="btn btn-light" href="applications.html">See How to Apply</a>
+          <a class="btn btn-light" href="contact.html">Contact the Program</a>
         </div>
       </div>
     </section>

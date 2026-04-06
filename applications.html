@@ -3,12 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Application guidance for the ARISE CyberAI Scholarship for Service at the University of Central Arkansas." />
+  <meta
+    name="description"
+    content="Application guidance for the ARISE CyberAI Scholarship for Service at the University of Central Arkansas."
+  />
   <title>Applications | ARISE CyberAI SFS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .photo-card,
+    .info-panel,
+    .important-box,
+    .summary-strip {
+      background: var(--white);
+      border: 1px solid rgba(88,44,131,0.08);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .photo-card {
+      overflow: hidden;
+      min-height: 100%;
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      min-height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .summary-strip {
+      padding: 1rem 1.1rem;
+      margin-top: 1.2rem;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap: 1rem;
+    }
+
+    .summary-item {
+      background: rgba(88,44,131,0.08);
+      border: 1px solid rgba(88,44,131,0.12);
+      border-radius: 14px;
+      padding: 0.95rem 1rem;
+    }
+
+    .summary-item strong {
+      display: block;
+      color: var(--uca-purple-dark);
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .summary-item span {
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .split-feature {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      align-items: stretch;
+    }
+
+    .info-panel {
+      padding: 1.4rem;
+    }
+
+    .important-box {
+      padding: 1.2rem 1.3rem;
+      background: #fff8ea;
+      border-left: 5px solid var(--gold);
+    }
+
+    .important-box p {
+      margin: 0;
+      color: #5f4a12;
+    }
+
+    .clean-list {
+      margin: 0.6rem 0 0;
+      padding-left: 1.1rem;
+    }
+
+    .clean-list li {
+      margin: 0.45rem 0;
+    }
+
+    .mini-note {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 0.8rem;
+    }
+
+    @media (max-width: 980px) {
+      .summary-grid,
+      .split-feature {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body class="program-page">
   <div class="topbar">
@@ -49,30 +150,70 @@
       <h1>Application guidance for prospective ARISE scholars</h1>
       <p class="lead">
         Prepare a clear, complete, and thoughtful application that demonstrates academic readiness,
-        interest in CyberAI and cybersecurity, and motivation for public-service career pathways.
+        technical preparation, interest in cybersecurity, and commitment to a public-service career pathway.
       </p>
+
+      <div class="summary-strip">
+        <div class="summary-grid">
+          <div class="summary-item">
+            <strong>Competitive Selection</strong>
+            <span>Applications are reviewed through a competitive process administered by the ARISE leadership team.</span>
+          </div>
+          <div class="summary-item">
+            <strong>Minimum 3.0 GPA</strong>
+            <span>Applicants should meet the minimum GPA requirement at the time of application.</span>
+          </div>
+          <div class="summary-item">
+            <strong>BS and MS Pathways</strong>
+            <span>Eligible undergraduate, accelerated BS-MS, and master’s students may apply.</span>
+          </div>
+          <div class="summary-item">
+            <strong>Internship + Service</strong>
+            <span>Applicants should understand the internship pathway and post-graduation service obligation before applying.</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section>
     <div class="container">
       <div class="alert-warning">
-        <strong>Notice:</strong> The ARISE CyberAI SFS program is pending funding through NSF Program Solicitation NSF 26-503. Content on this site reflects the proposed program as described in the submitted proposal. Final application instructions and deadlines will be confirmed if the program is funded.
+        <strong>Notice:</strong> The ARISE CyberAI SFS program is pending funding through NSF Program Solicitation NSF 26-503.
+        Content on this site reflects the proposed program as described in the submitted proposal.
+        Final application instructions, deadlines, and review procedures will be confirmed if the program is funded.
       </div>
     </div>
   </section>
 
   <main>
     <section>
-      <div class="container">
-        <h2 class="section-title">Before you apply</h2>
-        <p class="section-intro">
-          Before beginning your application, review the eligibility requirements carefully and make sure the program aligns with your academic preparation, career interests, and willingness to pursue public-sector cybersecurity service after graduation.
-        </p>
+      <div class="container split-feature">
+        <article class="info-panel">
+          <h2 class="section-title">Before you apply</h2>
+          <p>
+            Before beginning your application, review the eligibility requirements carefully and make sure the program
+            aligns with your academic preparation, career interests, and willingness to pursue qualifying public-sector cybersecurity service after graduation.
+          </p>
+          <ul class="clean-list">
+            <li>Confirm that you meet the minimum 3.0 GPA requirement</li>
+            <li>Confirm that your academic pathway is eligible</li>
+            <li>For BS pathways, confirm that you will be a junior or senior while in the program</li>
+            <li>Review internship, employment, and service obligations carefully</li>
+            <li>Make sure the scholarship-for-service model is a realistic fit for your long-term goals</li>
+          </ul>
 
-        <div class="page-actions">
-          <a class="btn btn-secondary" href="requirements.html">Review Eligibility Requirements</a>
-          <a class="btn btn-secondary" href="program.html">Explore the Program</a>
+          <div class="page-actions">
+            <a class="btn btn-secondary" href="requirements.html">Review Eligibility Requirements</a>
+            <a class="btn btn-secondary" href="program.html">Explore the Program</a>
+          </div>
+        </article>
+
+        <div class="photo-card">
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+            alt="Students collaborating and reviewing application materials together"
+          />
         </div>
       </div>
     </section>
@@ -86,7 +227,7 @@
               <li>Completed scholarship application form</li>
               <li>Academic transcript or degree audit</li>
               <li>Résumé highlighting technical preparation and relevant experience</li>
-              <li>Statement of interest describing academic goals, CyberAI/cybersecurity interests, and motivation for public service</li>
+              <li>Statement of interest describing academic goals, cybersecurity interests, and motivation for public service</li>
               <li>Additional supporting materials requested by the program, such as recommendations or interview responses</li>
             </ul>
           </article>
@@ -94,14 +235,40 @@
           <article class="card">
             <h3>What reviewers will likely consider</h3>
             <ul class="list-clean">
-              <li>Academic preparation and relevant coursework</li>
-              <li>Interest in cybersecurity, AI, and related technical areas</li>
-              <li>Evidence of motivation for government or public-interest service</li>
-              <li>Communication skills, professionalism, and clarity of purpose</li>
-              <li>Potential to succeed in a rigorous CyberAI scholarship pathway</li>
+              <li>Academic achievement, including GPA and relevant coursework</li>
+              <li>Technical preparation in computing and cybersecurity</li>
+              <li>Demonstrated interest in public service</li>
+              <li>Communication skills and professionalism</li>
+              <li>Potential for success in cybersecurity careers</li>
             </ul>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container split-feature">
+        <div class="photo-card">
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+            alt="Students working with laptops in a university learning environment"
+          />
+        </div>
+
+        <article class="info-panel">
+          <h2 class="section-title">What the scholarship may provide</h2>
+          <p>
+            ARISE is designed to provide comprehensive support consistent with program guidelines.
+            Proposed support includes full tuition and fees, an annual stipend, and allowances for books, supplies,
+            professional travel including the SFS Job Fair, and cybersecurity certification preparation.
+          </p>
+          <p>
+            Scholarships may be provided for up to three years, depending on academic level at entry and pathway structure.
+          </p>
+          <p class="mini-note">
+            The pathway is designed for eligible undergraduate, accelerated BS-MS, and master’s students.
+          </p>
+        </article>
       </div>
     </section>
 
@@ -112,24 +279,24 @@
           <article class="card">
             <h3>Show clear motivation</h3>
             <p>
-              Explain why cybersecurity, AI, or CyberAI matters to you, what experiences shaped your interest,
-              and how ARISE fits your long-term goals.
+              Explain why cybersecurity and public service matter to you, what experiences shaped your interest,
+              and how ARISE fits your academic and career goals.
             </p>
           </article>
 
           <article class="card">
             <h3>Highlight relevant preparation</h3>
             <p>
-              Include coursework, projects, labs, research, competitions, certifications, internships,
-              or technical experiences that show readiness for the program.
+              Include coursework, projects, labs, research, certifications, internships, competitions,
+              or other technical experiences that demonstrate readiness for the program.
             </p>
           </article>
 
           <article class="card">
             <h3>Write professionally</h3>
             <p>
-              Use clear, concise, and professional language. Organize your materials carefully
-              and proofread before submission.
+              Use clear, concise, and professional language. Organize your materials carefully,
+              proofread thoroughly, and present a thoughtful case for your fit and readiness.
             </p>
           </article>
         </div>
@@ -138,18 +305,18 @@
 
     <section>
       <div class="container">
-        <h2 class="section-title">Application steps</h2>
+        <h2 class="section-title">Application and review steps</h2>
         <div class="grid-2">
           <article class="card">
-            <h3>Step 1: Confirm fit</h3>
+            <h3>Step 1: Confirm eligibility and fit</h3>
             <p>
-              Review the eligibility requirements and program expectations to determine whether ARISE matches
-              your academic background and career interests.
+              Review the eligibility requirements and program expectations to determine whether ARISE matches your academic background,
+              class standing, GPA, and public-service career interests.
             </p>
           </article>
 
           <article class="card">
-            <h3>Step 2: Prepare materials</h3>
+            <h3>Step 2: Prepare your materials</h3>
             <p>
               Gather your transcript, résumé, and statement of interest early so you have time to revise
               and strengthen your application.
@@ -157,18 +324,49 @@
           </article>
 
           <article class="card">
-            <h3>Step 3: Ask questions if needed</h3>
+            <h3>Step 3: Submit a complete application</h3>
             <p>
-              If you are unsure about eligibility, fit, or preparation, contact the program before submitting.
+              Submit a polished, accurate, and complete application that reflects your preparation,
+              motivation, and interest in cybersecurity-related public service.
             </p>
           </article>
 
           <article class="card">
-            <h3>Step 4: Submit a polished application</h3>
+            <h3>Step 4: Faculty evaluation</h3>
             <p>
-              Make sure your materials are complete, professional, and aligned with the mission of the ARISE CyberAI SFS pathway.
+              Applications are expected to be reviewed by program leadership and faculty using criteria such as
+              academic performance, technical preparation, communication skills, and potential for success.
             </p>
           </article>
+
+          <article class="card">
+            <h3>Step 5: Interview, if invited</h3>
+            <p>
+              Some applicants may be invited for interviews to help assess communication,
+              professionalism, and readiness for a rigorous scholarship-for-service pathway.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Step 6: Final selection and eligibility verification</h3>
+            <p>
+              Final selection is expected to confirm compliance with SFS eligibility requirements,
+              including citizenship, academic standing, and pathway alignment.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="important-box">
+          <p>
+            <strong>Important consideration:</strong> ARISE is a scholarship-for-service program, not a general scholarship alone.
+            Scholars are required to complete one year of full-time employment in a qualifying government cybersecurity position
+            for each year of scholarship support received. Internship participation is part of the pathway, and inability to complete
+            the required service may result in a repayment obligation similar to a student loan.
+          </p>
         </div>
       </div>
     </section>
@@ -177,7 +375,8 @@
       <div class="container">
         <h2>Need help before you apply?</h2>
         <p>
-          Review the selection process, read the FAQs, or contact the ARISE team if you need clarification about eligibility, preparation, or application materials.
+          Review the selection process, read the FAQs, or contact the ARISE team if you need clarification about eligibility,
+          preparation, service commitment, or application materials.
         </p>
         <div class="button-row">
           <a class="btn btn-light" href="process.html">Review the Selection Process</a>

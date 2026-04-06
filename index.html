@@ -3,15 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="ARISE CyberAI Scholarship for Service at the University of Central Arkansas." />
+  <meta
+    name="description"
+    content="ARISE CyberAI Scholarship for Service at the University of Central Arkansas for eligible students pursuing cybersecurity-focused public service careers."
+  />
   <title>ARISE CyberAI SFS | University of Central Arkansas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .hero-visual {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .hero-photo,
+    .feature-photo {
+      overflow: hidden;
+      border-radius: var(--radius);
+      border: 1px solid rgba(88,44,131,0.08);
+      box-shadow: var(--shadow);
+      background: #fff;
+    }
+
+    .hero-photo img,
+    .feature-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-photo {
+      min-height: 230px;
+    }
+
+    .fact-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap: 1rem;
+      margin-top: 1.35rem;
+    }
+
+    .fact-pill {
+      background: rgba(88,44,131,0.08);
+      border: 1px solid rgba(88,44,131,0.12);
+      border-radius: 14px;
+      padding: 0.9rem 1rem;
+    }
+
+    .fact-pill strong {
+      display: block;
+      color: var(--uca-purple-dark);
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .fact-pill span {
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .image-text-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      align-items: stretch;
+    }
+
+    .feature-photo {
+      min-height: 100%;
+    }
+
+    .feature-photo img {
+      min-height: 100%;
+    }
+
+    .mini-note {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-top: 0.7rem;
+    }
+
+    .important-note {
+      background: #fff7e8;
+      border-left: 5px solid var(--gold);
+      color: #624700;
+      padding: 16px 18px;
+      border-radius: 6px;
+      font-size: 0.98rem;
+      line-height: 1.55;
+      margin-top: 1rem;
+    }
+
+    .check-list {
+      margin: 0.6rem 0 0;
+      padding-left: 1.15rem;
+    }
+
+    .check-list li {
+      margin: 0.45rem 0;
+    }
+
+    @media (max-width: 980px) {
+      .fact-strip,
+      .image-text-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body class="home-page">
-    <div class="topbar">
+  <div class="topbar">
     <div class="container">
       <div>University of Central Arkansas · ARISE CyberAI Scholarship for Service</div>
       <div><a href="applications.html">Apply Now</a></div>
@@ -45,38 +149,68 @@
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <div class="eyebrow">CyberAI Scholarship for Service</div>
-        <h1>Launch your path to a government cybersecurity career.</h1>
+        <div class="eyebrow">NSF Scholarship for Service Pathway</div>
+        <h1>Prepare for a cybersecurity career in government service.</h1>
         <p class="lead">
-          ARISE CyberAI SFS is designed for UCA students who want advanced preparation in cybersecurity and AI,
-          meaningful hands-on experience, close faculty mentoring, and a pathway into public-service cybersecurity careers.
+          ARISE CyberAI SFS is a proposed scholarship pathway for eligible students who want strong preparation in cybersecurity,
+          applied AI, hands-on learning, faculty mentoring, and structured transition into qualifying government cybersecurity careers.
         </p>
+
         <div class="hero-actions">
           <a class="btn btn-primary" href="applications.html">Apply Now</a>
           <a class="btn btn-secondary" href="requirements.html">Check Eligibility</a>
         </div>
+
+        <div class="fact-strip">
+          <div class="fact-pill">
+            <strong>Up to 3 Years</strong>
+            <span>Scholarship support may be provided for up to three years, depending on pathway and entry point.</span>
+          </div>
+          <div class="fact-pill">
+            <strong>Annual Stipend</strong>
+            <span>Support includes an annual stipend along with tuition, fees, and related academic support.</span>
+          </div>
+          <div class="fact-pill">
+            <strong>BS, BS-MS, and MS</strong>
+            <span>Eligible undergraduate, accelerated BS-MS, and master’s students may participate.</span>
+          </div>
+          <div class="fact-pill">
+            <strong>Internship + Service</strong>
+            <span>The pathway includes internship preparation and post-graduation government service obligations.</span>
+          </div>
+        </div>
       </div>
 
-      <aside class="hero-card">
-        <h2>Quick Facts</h2>
-        <p>
-          A student-centered scholarship pathway for students interested in cybersecurity,
-          AI-enabled cyber defense, research, and government service.
-        </p>
-        <div class="stat-grid">
-          <div class="stat"><strong>CyberAI</strong><span>integrated coursework, labs, and research</span></div>
-          <div class="stat"><strong>BS + MS</strong><span>eligible computing pathways</span></div>
-          <div class="stat"><strong>Mentoring</strong><span>faculty guidance and professional development</span></div>
-          <div class="stat"><strong>Service Pathway</strong><span>preparation for government cybersecurity careers</span></div>
+      <div class="hero-visual">
+        <aside class="hero-card">
+          <h2>Quick Facts</h2>
+          <p>
+            A student-centered scholarship opportunity designed to help students build cybersecurity knowledge,
+            applied technical skills, and readiness for qualifying government service roles.
+          </p>
+          <div class="stat-grid">
+            <div class="stat"><strong>3.0 GPA</strong><span>minimum GPA expectation for application</span></div>
+            <div class="stat"><strong>Junior/Senior + MS</strong><span>BS students should be juniors or seniors while in the program</span></div>
+            <div class="stat"><strong>Career Preparation</strong><span>includes mentoring, job fair readiness, and government hiring guidance</span></div>
+            <div class="stat"><strong>Public Service</strong><span>scholarship tied to qualifying government cybersecurity careers</span></div>
+          </div>
+        </aside>
+
+        <div class="hero-photo">
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+            alt="Students working together with laptops in a collaborative academic setting"
+          />
         </div>
-      </aside>
+      </div>
     </div>
   </section>
 
   <section>
     <div class="container">
       <div class="alert-warning">
-        <strong>Notice:</strong> The ARISE CyberAI SFS program is pending funding through NSF Program Solicitation NSF 26-503. Content on this site reflects the proposed program as described in the submitted proposal.
+        <strong>Notice:</strong> The ARISE CyberAI SFS program is pending funding through NSF Program Solicitation NSF 26-503.
+        Content on this site reflects the proposed program as described in the submitted proposal.
       </div>
     </div>
   </section>
@@ -86,37 +220,69 @@
       <div class="container">
         <h2 class="section-title">Why apply to ARISE?</h2>
         <p class="section-intro">
-          ARISE is built for students who want more than coursework alone. The program combines academic preparation,
-          practical cybersecurity training, faculty mentoring, career development, and a clear path toward public-sector cybersecurity service.
+          ARISE is designed for students who want financial support, structured preparation, practical experience,
+          and a clear pathway into cybersecurity careers that serve the public interest.
         </p>
 
         <div class="grid-3">
           <article class="card">
-            <div class="kicker">Scholarship Support</div>
-            <h3>Reduce financial barriers while you focus on growth</h3>
+            <div class="kicker">Financial Support</div>
+            <h3>Receive meaningful support while focusing on your education</h3>
             <p>
-              The proposed support model includes tuition and fees, stipend support, books and supplies,
-              professional travel, and certification-related preparation.
+              The proposed support model includes full tuition and fees, an annual stipend, books and supplies,
+              professional travel including the SFS Job Fair, and cybersecurity certification preparation.
             </p>
           </article>
 
           <article class="card">
-            <div class="kicker">Hands-On Experience</div>
-            <h3>Build practical CyberAI skills</h3>
+            <div class="kicker">Applied Preparation</div>
+            <h3>Gain practical experience before graduation</h3>
             <p>
-              Students engage in applied cybersecurity and AI learning through labs, research experiences,
-              competitions, projects, and internship preparation.
+              Students are expected to build readiness through coursework, labs, projects, faculty mentoring,
+              internship pathways, and structured professional development connected to cybersecurity careers.
             </p>
           </article>
 
           <article class="card">
             <div class="kicker">Career Pathway</div>
-            <h3>Prepare for cybersecurity service roles</h3>
+            <h3>Prepare for qualifying government cybersecurity service</h3>
             <p>
-              The program is designed to help students prepare for internships, the SFS job fair,
-              and qualifying government cybersecurity careers after graduation.
+              The program is designed to help students prepare for internships, the CyberAI SFS Job Fair,
+              federal hiring processes, and transition into qualifying government cybersecurity positions.
             </p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container image-text-grid">
+        <div class="highlight-panel">
+          <h2 class="section-title">Who should explore this opportunity?</h2>
+          <p>
+            ARISE may be a strong fit for students who want to combine academic rigor, applied cybersecurity preparation,
+            and public-service career goals.
+          </p>
+          <ul class="check-list">
+            <li>Eligible undergraduate students in approved pathways</li>
+            <li>Eligible accelerated BS-MS students</li>
+            <li>Eligible master’s students in approved pathways</li>
+            <li>Students interested in cybersecurity-focused public service</li>
+            <li>Students who are prepared for internship and government service expectations</li>
+          </ul>
+          <div class="page-actions">
+            <a class="btn btn-secondary" href="requirements.html">View Eligibility Requirements</a>
+          </div>
+          <p class="mini-note">
+            Detailed GPA, class-standing, citizenship, and participation requirements are available on the Requirements page.
+          </p>
+        </div>
+
+        <div class="feature-photo">
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+            alt="University students collaborating in a classroom or lab environment"
+          />
         </div>
       </div>
     </section>
@@ -125,37 +291,33 @@
       <div class="container">
         <div class="grid-2">
           <div class="highlight-panel">
-            <h2 class="section-title">Who should explore this opportunity?</h2>
+            <h2 class="section-title">What the program offers</h2>
             <p>
-              ARISE may be a strong fit for students who are motivated to develop technical depth in cybersecurity,
-              AI, secure systems, and analytics while pursuing careers that support the public interest.
+              ARISE combines financial support, mentoring, professional development, internship pathways,
+              research opportunities, and government-career preparation into one coordinated student experience.
             </p>
             <ul class="list-clean">
-              <li>Students interested in cybersecurity and cyber defense</li>
-              <li>Students curious about how AI supports security operations</li>
-              <li>Students seeking research, mentoring, and professional growth</li>
-              <li>Students interested in public-sector impact and service</li>
+              <li>Full tuition and fees</li>
+              <li>Annual stipend</li>
+              <li>Books and supplies support</li>
+              <li>Professional travel including the SFS Job Fair</li>
+              <li>Cybersecurity certification preparation</li>
             </ul>
-            <div class="page-actions">
-              <a class="btn btn-secondary" href="requirements.html">View Eligibility Requirements</a>
-            </div>
+            <p class="mini-note">
+              Support duration depends on academic level at entry and pathway structure.
+            </p>
           </div>
 
           <div class="highlight-panel">
-            <h2 class="section-title">Eligible academic pathways</h2>
-            <p>
-              ARISE is designed around UCA computing pathways that support cybersecurity, analytics,
-              software systems, and AI-enabled cyber defense.
-            </p>
-            <ul class="list-clean">
-              <li>BS in Computer Science</li>
-              <li>BS in Cybersecurity</li>
-              <li>BS in Data Science</li>
-              <li>BS in Software Engineering</li>
-              <li>MS in Computer Science</li>
+            <h2 class="section-title">What students should understand</h2>
+            <ul class="check-list">
+              <li>This is a scholarship-for-service pathway, not a general scholarship alone</li>
+              <li>Internship participation is an important part of the pathway</li>
+              <li>Government service after graduation is required</li>
+              <li>Students should think carefully about government employment and clearance-related readiness</li>
             </ul>
-            <div class="page-actions">
-              <a class="btn btn-secondary" href="program.html">Explore the Program Experience</a>
+            <div class="important-note">
+              <strong>Important:</strong> Scholars are required to complete one year of full-time employment in a qualifying government cybersecurity position for each year of scholarship support received. If the required service is not completed, the scholarship may become a repayment obligation similar to a student loan.
             </div>
           </div>
         </div>
@@ -169,22 +331,24 @@
           <article class="card">
             <h3>Faculty mentoring</h3>
             <p>
-              Work closely with faculty through guided academic planning, research engagement,
-              professional development, and career preparation.
+              Work closely with faculty through advising, academic planning, research engagement,
+              internship preparation, and professional development.
             </p>
           </article>
 
           <article class="card">
-            <h3>Research and applied learning</h3>
+            <h3>Hands-on learning</h3>
             <p>
-              Participate in projects, labs, cyber activities, and other hands-on experiences that strengthen both technical and professional readiness.
+              Participate in labs, projects, applied cybersecurity activities, internship pathways,
+              and other structured experiences that strengthen technical depth and workplace readiness.
             </p>
           </article>
 
           <article class="card">
-            <h3>Career preparation</h3>
+            <h3>Government-career readiness</h3>
             <p>
-              Build readiness for internships, certifications, the SFS job fair, and transition into qualifying service roles after graduation.
+              Build readiness for résumé development, interview preparation, the CyberAI SFS Job Fair,
+              federal hiring processes, and qualifying government cybersecurity roles.
             </p>
           </article>
         </div>
@@ -193,12 +357,14 @@
 
     <section class="callout-band">
       <div class="container">
-        <h2>Ready to see whether ARISE is right for you?</h2>
+        <h2>Interested in the ARISE CyberAI SFS opportunity?</h2>
         <p>
-          Review the eligibility requirements, learn how the program works, and begin preparing your application materials.
+          Review the requirements carefully, understand the internship and service commitments,
+          and begin preparing your application materials.
         </p>
         <div class="button-row">
-          <a class="btn btn-light" href="applications.html">Application Instructions</a>
+          <a class="btn btn-light" href="requirements.html">Review Requirements</a>
+          <a class="btn btn-light" href="applications.html">Application Guidance</a>
           <a class="btn btn-light" href="faqs.html">Read FAQs</a>
         </div>
       </div>
@@ -209,7 +375,10 @@
     <div class="container footer-grid">
       <div>
         <h3>ARISE CyberAI SFS</h3>
-        <p>A student-centered scholarship website for the ARISE CyberAI Scholarship for Service program at the University of Central Arkansas.</p>
+        <p>
+          A student-facing website for the proposed ARISE CyberAI Scholarship for Service program
+          at the University of Central Arkansas.
+        </p>
       </div>
       <div>
         <h4>Explore</h4>
