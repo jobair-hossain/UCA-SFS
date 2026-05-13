@@ -11,14 +11,33 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
 
   <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    .future-ready-page .future-ready-actions {
+      margin-top: 24px;
+      margin-bottom: 30px;
+    }
+
+    .future-ready-page .photo-card {
+      margin-top: 14px;
+    }
+
+    .future-ready-page .photo-card img {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+    }
+  </style>
 </head>
 
-<body>
+<body class="future-ready-page">
 
-  <!-- TOP BAR -->
   <div class="topbar">
     <div class="container">
       <div>University of Central Arkansas · ARISE CyberAI Scholarship for Service</div>
@@ -26,10 +45,8 @@
     </div>
   </div>
 
-  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
-
       <a class="brand" href="index.html" aria-label="ARISE CyberAI SFS home">
         <div class="brand-mark">UCA</div>
         <div>
@@ -54,11 +71,9 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-
     </div>
   </header>
 
-  <!-- HERO -->
   <section class="hero hero-simple">
     <div class="container">
       <div class="breadcrumbs">
@@ -76,7 +91,6 @@
     </div>
   </section>
 
-  <!-- NOTICE -->
   <section>
     <div class="container">
       <div class="alert-warning">
@@ -87,7 +101,6 @@
     </div>
   </section>
 
-  <!-- MAIN CONTENT -->
   <main>
 
     <section>
@@ -108,10 +121,12 @@
             research opportunities, professional networking, and public-service cybersecurity careers.
           </p>
 
-          <div class="page-actions">
-            <a class="btn btn-primary"
-               href="https://faculty.uca.edu/vparuchuri/FutureReady.html"
-               target="_blank">
+          <div class="page-actions future-ready-actions">
+            <a
+              class="btn btn-primary"
+              href="https://faculty.uca.edu/vparuchuri/FutureReady.html"
+              target="_blank"
+            >
               Visit Future Ready Series
             </a>
           </div>
@@ -219,7 +234,6 @@
 
   </main>
 
-  <!-- FOOTER -->
   <footer>
     <div class="container footer-grid">
 
@@ -258,7 +272,6 @@
     </div>
   </footer>
 
-  <!-- SCRIPT -->
   <script src="script.js"></script>
 
 </body>
